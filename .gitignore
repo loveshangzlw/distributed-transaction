@@ -1,0 +1,3 @@
+# Project exclude paths
+/bean/target/
+/chain-db-db/target/

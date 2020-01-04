@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    order:
+      url: jdbc:mysql://localhost:3306/order?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: xiaofengai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    user:
+      url: jdbc:mysql://localhost:3306/customer?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: xiaofengai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
