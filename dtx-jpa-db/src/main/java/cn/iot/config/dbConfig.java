@@ -14,7 +14,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
-@Configuration
+
 public class dbConfig {
 
     @Bean
@@ -31,6 +31,11 @@ public class dbConfig {
     }
 
     /*@Bean
+    public JdbcTemplate userJdbcTemplate(@Qualifier("userDataSource")DataSource userDataSource){
+        return new JdbcTemplate(userDataSource);
+    }
+
+    @Bean
     public PlatformTransactionManager transactionManager(){
         DataSourceTransactionManager userTransactionManager= new DataSourceTransactionManager(userDataSource());
         DataSourceTransactionManager orderTransactionManager = new DataSourceTransactionManager(orderDataSource());

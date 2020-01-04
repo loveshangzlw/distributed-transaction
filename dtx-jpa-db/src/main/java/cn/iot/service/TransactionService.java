@@ -1,18 +1,15 @@
 package cn.iot.service;
 
 import cn.iot.mapper.CustomerMapper;
-import cn.iot.mapper.OrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Service
+
 public class TransactionService {
 
-    @Autowired
-    private OrderMapper orderMapper;
 
     @Autowired
     private CustomerMapper customerMapper;

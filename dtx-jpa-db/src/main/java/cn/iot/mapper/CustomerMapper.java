@@ -1,7 +1,8 @@
 package cn.iot.mapper;
 
 import cn.iot.bean.Customer;
-import tk.mybatis.mapper.common.Mapper;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerMapper extends Mapper<Customer> {
+
+public interface CustomerMapper extends JpaRepository<Customer,Long> {
 }
