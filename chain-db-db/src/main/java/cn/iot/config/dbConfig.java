@@ -36,13 +36,13 @@ public class dbConfig {
         return new JdbcTemplate(userDataSource);
     }
 
-  /*  @Bean
+    @Bean
     public PlatformTransactionManager transactionManager(){
         DataSourceTransactionManager userTransactionManager= new DataSourceTransactionManager(userDataSource());
         DataSourceTransactionManager orderTransactionManager = new DataSourceTransactionManager(orderDataSource());
         ChainedTransactionManager transactionManager = new ChainedTransactionManager(userTransactionManager, orderTransactionManager);
         return transactionManager;
-    }*/
+    }
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.order")
