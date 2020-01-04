@@ -1,4 +1,4 @@
-package cn.iot.bean;
+package cn.iot.chain.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

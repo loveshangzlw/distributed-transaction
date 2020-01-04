@@ -1,9 +1,5 @@
-package cn.iot.service;
+package cn.iot.chain.service;
 
-import cn.iot.bean.Customer;
-import cn.iot.bean.Order;
-import cn.iot.mapper.CustomerMapper;
-import cn.iot.mapper.OrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,12 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class TransactionService {
-
-    @Autowired
-    private OrderMapper orderMapper;
-
-    @Autowired
-    private CustomerMapper customerMapper;
 
     @Autowired
     @Qualifier("orderJdbcTemplate")
